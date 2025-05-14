@@ -15,8 +15,10 @@ how each configuration performs across benchmarks. For details on the kernel con
 ## Repo Structure
 
 Microwave/ - Kernel testing framework Python package
+
 KernelSecurityBenchmark/ - Kernel evaluation and analysis Python package
-documentation/ - Documentation and evaluation results
+
+docs/ - Documentation and evaluation results
 
 ## Installation
 
