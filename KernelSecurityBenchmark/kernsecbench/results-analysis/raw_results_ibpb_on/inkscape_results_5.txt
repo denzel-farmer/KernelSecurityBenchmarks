@@ -1,0 +1,76 @@
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+PROCESSOR:              Intel Xeon
+Core Count:           8
+Extensions:           SSE 4.2
++ AVX512_VNNI
++ AVX512CD
++ AVX2
++ AVX
++ RDRAND
++ FSGSBASE
+Cache Size:           16 MB
+Microcode:            0xffffffff
+Core Family:          Cascade Lake
+
+GRAPHICS:
+
+MOTHERBOARD:            QEMU Ubuntu 25.04 PC
+BIOS Version:         1.16.3-debian-1.16.3-2
+Chipset:              Intel 440FX 82441FX PMC
+Network:              Red Hat Virtio device
+
+MEMORY:                 1 x 8 GB RAM QEMU
+
+DISK:                   24GB
+File-System:          ext4
+Mount Options:        commit=30 discard errors=remount-ro relatime rw
+Disk Details:         Block Size: 4096
+
+OPERATING SYSTEM:       Ubuntu 24.04
+Kernel:               6.8.0 (x86_64)
+Compiler:             GCC 13.3.0
+System Layer:         KVM
+Security:             gather_data_sampling: Not affected
++ itlb_multihit: Not affected
++ l1tf: Not affected
++ mds: Not affected
++ meltdown: Not affected
++ mmio_stale_data: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
++ retbleed: Vulnerable: untrained return thunk / IBPB on non-AMD based uarch
++ spec_rstack_overflow: Not affected
++ spec_store_bypass: Mitigation of SSB disabled via prctl
++ spectre_v1: Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
++ spectre_v2: Vulnerable IBPB: disabled STIBP: disabled PBRSB-eIBRS: Vulnerable
++ srbds: Not affected
++ tsx_async_abort: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
+
+
+[8192] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in pts_test_run_manager:594
+
+Inkscape:
+system/inkscape-1.0.1 [Operation: SVG Files To PNG]
+Test 1 of 1
+Estimated Trial Run Count:    3
+Estimated Time To Completion: 2 Minutes [12:44 UTC]
+Started Run 1 @ 12:42:56
+Started Run 2 @ 12:43:39
+Started Run 3 @ 12:44:20
+Started Run 4 @ 12:45:01 *
+Started Run 5 @ 12:45:41 *
+
+Operation: SVG Files To PNG:
+38.665
+36.944
+36.871
+36.602
+36.713
+
+Average: 37.159 Seconds
+Deviation: 2.29%
+Samples: 5
+

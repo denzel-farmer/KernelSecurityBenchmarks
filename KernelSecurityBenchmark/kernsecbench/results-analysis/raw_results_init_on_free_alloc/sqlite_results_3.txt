@@ -1,0 +1,87 @@
+
+
+
+SQLite 3.41.2:
+pts/sqlite-2.2.0
+Disk Test Configuration
+1: 1
+2: 2
+3: 4
+4: 8
+5: Test All Options
+** Multiple items can be selected, delimit by a comma. **
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+PROCESSOR:              Intel Xeon
+Core Count:           8
+Extensions:           SSE 4.2
++ AVX512_VNNI
++ AVX512CD
++ AVX2
++ AVX
++ RDRAND
++ FSGSBASE
+Cache Size:           16 MB
+Microcode:            0xffffffff
+Core Family:          Cascade Lake
+
+GRAPHICS:
+
+MOTHERBOARD:            QEMU Ubuntu 25.04 PC
+BIOS Version:         1.16.3-debian-1.16.3-2
+Chipset:              Intel 440FX 82441FX PMC
+Network:              Red Hat Virtio device
+
+MEMORY:                 1 x 8 GB RAM QEMU
+
+DISK:                   24GB
+File-System:          ext4
+Mount Options:        commit=30 discard errors=remount-ro relatime rw
+Disk Details:         Block Size: 4096
+
+OPERATING SYSTEM:       Ubuntu 24.04
+Kernel:               6.8.0 (x86_64)
+Compiler:             GCC 13.3.0
+System Layer:         KVM
+Security:             gather_data_sampling: Not affected
++ itlb_multihit: Not affected
++ l1tf: Not affected
++ mds: Not affected
++ meltdown: Not affected
++ mmio_stale_data: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
++ retbleed: Vulnerable
++ spec_rstack_overflow: Not affected
++ spec_store_bypass: Mitigation of SSB disabled via prctl
++ spectre_v1: Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
++ spectre_v2: Vulnerable IBPB: disabled STIBP: disabled PBRSB-eIBRS: Vulnerable
++ srbds: Not affected
++ tsx_async_abort: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
+
+
+[8192] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in pts_test_run_manager:594
+
+SQLite 3.41.2:
+pts/sqlite-2.2.0 [Threads / Copies: 4]
+Test 1 of 1
+Estimated Trial Run Count:    3
+Estimated Time To Completion: 2 Minutes [13:17 UTC]
+Running Pre-Test Script @ 13:15:47
+Started Run 1 @ 13:15:48
+Running Interim Test Script @ 13:17:05
+Started Run 2 @ 13:17:07
+Running Interim Test Script @ 13:18:21
+Started Run 3 @ 13:18:23
+Running Post-Test Script @ 13:19:37
+
+Threads / Copies: 4:
+75.086
+72.338
+71.7
+
+Average: 73.041 Seconds
+Deviation: 2.46%
+

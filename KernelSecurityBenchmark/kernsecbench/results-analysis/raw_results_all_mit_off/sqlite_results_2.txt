@@ -1,0 +1,87 @@
+
+
+
+SQLite 3.41.2:
+pts/sqlite-2.2.0
+Disk Test Configuration
+1: 1
+2: 2
+3: 4
+4: 8
+5: Test All Options
+** Multiple items can be selected, delimit by a comma. **
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+PROCESSOR:              Intel Xeon
+Core Count:           8
+Extensions:           SSE 4.2
++ AVX512_VNNI
++ AVX512CD
++ AVX2
++ AVX
++ RDRAND
++ FSGSBASE
+Cache Size:           16 MB
+Microcode:            0xffffffff
+Core Family:          Cascade Lake
+
+GRAPHICS:
+
+MOTHERBOARD:            QEMU Ubuntu 25.04 PC
+BIOS Version:         1.16.3-debian-1.16.3-2
+Chipset:              Intel 440FX 82441FX PMC
+Network:              Red Hat Virtio device
+
+MEMORY:                 1 x 8 GB RAM QEMU
+
+DISK:                   24GB
+File-System:          ext4
+Mount Options:        commit=30 discard errors=remount-ro relatime rw
+Disk Details:         Block Size: 4096
+
+OPERATING SYSTEM:       Ubuntu 24.04
+Kernel:               6.8.0 (x86_64)
+Compiler:             GCC 13.3.0
+System Layer:         KVM
+Security:             gather_data_sampling: Not affected
++ itlb_multihit: Not affected
++ l1tf: Not affected
++ mds: Not affected
++ meltdown: Not affected
++ mmio_stale_data: Vulnerable
++ retbleed: Vulnerable
++ spec_rstack_overflow: Not affected
++ spec_store_bypass: Vulnerable
++ spectre_v1: Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
++ spectre_v2: Vulnerable IBPB: disabled STIBP: disabled PBRSB-eIBRS: Vulnerable
++ srbds: Not affected
++ tsx_async_abort: Vulnerable
+
+
+[8192] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in pts_test_run_manager:594
+
+SQLite 3.41.2:
+pts/sqlite-2.2.0 [Threads / Copies: 4]
+Test 1 of 1
+Estimated Trial Run Count:    3
+Estimated Time To Completion: 2 Minutes [12:06 UTC]
+Running Pre-Test Script @ 12:04:59
+Started Run 1 @ 12:04:59
+Running Interim Test Script @ 12:06:15
+Started Run 2 @ 12:06:17
+Running Interim Test Script @ 12:07:31
+Started Run 3 @ 12:07:33
+Running Post-Test Script @ 12:08:47
+
+Threads / Copies: 4:
+73.882
+71.528
+72.907
+
+Average: 72.772 Seconds
+Deviation: 1.63%
+

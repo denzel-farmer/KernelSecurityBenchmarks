@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "Microwave"
+version = "0.2.0"
+description = "A worker library for the Microwave grading framework"
+dependencies = [
+    "click",
+    "dataclasses",
+    "PyGithub",
+    "tqdm",
+    "GitPython"
+]
+authors = [{name = "Denzel Farmer", email = "denzel.farmer@columbia.edu"}]
+readme = "README.md"
+
+[tool.setuptools]
+packages = ["microwave2"]
+
+[project.scripts]
+microwave2 = "microwave2:cli.cli"

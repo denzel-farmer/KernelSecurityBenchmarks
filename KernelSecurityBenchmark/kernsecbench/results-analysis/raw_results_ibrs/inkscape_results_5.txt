@@ -1,0 +1,74 @@
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+PROCESSOR:              Intel Xeon
+Core Count:           8
+Extensions:           SSE 4.2
++ AVX512_VNNI
++ AVX512CD
++ AVX2
++ AVX
++ RDRAND
++ FSGSBASE
+Cache Size:           16 MB
+Microcode:            0xffffffff
+Core Family:          Cascade Lake
+
+GRAPHICS:
+
+MOTHERBOARD:            QEMU Ubuntu 25.04 PC
+BIOS Version:         1.16.3-debian-1.16.3-2
+Chipset:              Intel 440FX 82441FX PMC
+Network:              Red Hat Virtio device
+
+MEMORY:                 1 x 8 GB RAM QEMU
+
+DISK:                   24GB
+File-System:          ext4
+Mount Options:        commit=30 discard errors=remount-ro relatime rw
+Disk Details:         Block Size: 4096
+
+OPERATING SYSTEM:       Ubuntu 24.04
+Kernel:               6.8.0 (x86_64)
+Compiler:             GCC 13.3.0
+System Layer:         KVM
+Security:             gather_data_sampling: Not affected
++ itlb_multihit: Not affected
++ l1tf: Not affected
++ mds: Not affected
++ meltdown: Not affected
++ mmio_stale_data: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
++ retbleed: Vulnerable
++ spec_rstack_overflow: Not affected
++ spec_store_bypass: Mitigation of SSB disabled via prctl
++ spectre_v1: Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
++ spectre_v2: Mitigation of IBRS IBPB: disabled STIBP: disabled RSB filling PBRSB-eIBRS: SW sequence
++ srbds: Not affected
++ tsx_async_abort: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
+
+
+[8192] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in pts_test_run_manager:594
+
+Inkscape:
+system/inkscape-1.0.1 [Operation: SVG Files To PNG]
+Test 1 of 1
+Estimated Trial Run Count:    3
+Estimated Time To Completion: 2 Minutes [13:45 UTC]
+Started Run 1 @ 13:43:21
+Started Run 2 @ 13:43:58
+Started Run 3 @ 13:44:35
+Started Run 4 @ 13:45:11 *
+
+Operation: SVG Files To PNG:
+33.731
+32.368
+32.164
+32.122
+
+Average: 32.596 Seconds
+Deviation: 2.34%
+Samples: 4
+

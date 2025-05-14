@@ -1,0 +1,181 @@
+[lmbench3.0 results for Linux ubuntu-testing 6.8.0 #1 SMP PREEMPT_DYNAMIC Tue May 13 06:50:02 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux]
+[LMBENCH_VER: ]
+[BENCHMARK_HARDWARE: NO]
+[BENCHMARK_OS: NO]
+[ALL: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m 64m 128m 256m 512m 1024m 2048m 4096m]
+[DISKS: ]
+[DISK_DESC: ]
+[ENOUGH: 5000]
+[FAST: ]
+[FASTMEM: NO]
+[FILE: /var/tmp/XXX]
+[FSDIR: /var/tmp]
+[HALF: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m 64m 128m 256m 512m 1024m 2048m]
+[INFO: INFO.ubuntu-testing]
+[LINE_SIZE: ]
+[LOOP_O: 0.00000000]
+[MB: 5557]
+[MHZ: 1690 MHz, 0.5917 nanosec clock]
+[MOTHERBOARD: ]
+[NETWORKS: ]
+[PROCESSORS: 8]
+[REMOTE: ]
+[SLOWFS: YES]
+[OS: x86_64-linux-gnu]
+[SYNC_MAX: 1]
+[LMBENCH_SCHED: DEFAULT]
+[TIMING_O: 0]
+[LMBENCH VERSION: lmbench-3alpha4]
+[USER: root]
+[HOSTNAME: ubuntu-testing]
+[NODENAME: ubuntu-testing]
+[SYSNAME: Linux]
+[PROCESSOR: x86_64]
+[MACHINE: x86_64]
+[RELEASE: 6.8.0]
+[VERSION: #1 SMP PREEMPT_DYNAMIC Tue May 13 06:50:02 UTC 2025]
+[Tue May 13 14:03:20 UTC 2025]
+[ 14:03:20 up 0 min, 1 user, load average: 0.08, 0.02, 0.01]
+[net: Kernel Interface table]
+Kernel: error fetching interface information: Device not found
+[net: Iface             MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg]
+Iface: error fetching interface information: Device not found
+[net: ens3             1500        3      0      0 0            10      0      0      0 BMRU]
+[if: ens3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500]
+[if: inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255]
+[if: inet6 fe80::5054:ff:fe12:3456  prefixlen 64  scopeid 0x20<link>]
+[if: inet6 fec0::5054:ff:fe12:3456  prefixlen 64  scopeid 0x40<site>]
+[if: ether 52:54:00:12:34:56  txqueuelen 1000  (Ethernet)]
+[if: RX packets 3  bytes 1290 (1.2 KB)]
+[if: RX errors 0  dropped 0  overruns 0  frame 0]
+[if: TX packets 10  bytes 1388 (1.3 KB)]
+[if: TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0]
+[if: ]
+[net: lo              65536       80      0      0 0            80      0      0      0 LRU]
+[if: lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536]
+[if: inet 127.0.0.1  netmask 255.0.0.0]
+[if: inet6 ::1  prefixlen 128  scopeid 0x10<host>]
+[if: loop  txqueuelen 1000  (Local Loopback)]
+[if: RX packets 80  bytes 5920 (5.9 KB)]
+[if: RX errors 0  dropped 0  overruns 0  frame 0]
+[if: TX packets 80  bytes 5920 (5.9 KB)]
+[if: TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0]
+[if: ]
+[mount: /dev/vda1 on / type ext4 (rw,relatime,discard,errors=remount-ro,commit=30)]
+[mount: devtmpfs on /dev type devtmpfs (rw,relatime,size=4070524k,nr_inodes=1017631,mode=755)]
+[mount: proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)]
+[mount: sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: selinuxfs on /sys/fs/selinux type selinuxfs (rw,nosuid,noexec,relatime)]
+[mount: tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)]
+[mount: devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)]
+[mount: tmpfs on /run type tmpfs (rw,nosuid,nodev,size=1628648k,nr_inodes=819200,mode=755)]
+[mount: tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)]
+[mount: cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)]
+[mount: systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)]
+[mount: hugetlbfs on /dev/hugepages type hugetlbfs (rw,nosuid,nodev,relatime,pagesize=2M)]
+[mount: mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)]
+[mount: debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)]
+[mount: /dev/vda16 on /boot type ext4 (rw,relatime)]
+[mount: /dev/vda15 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)]
+[mount: binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)]
+[mount: tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=814320k,nr_inodes=203580,mode=700)]
+Simple syscall: 0.4097 microseconds
+Simple read: 0.4706 microseconds
+Simple write: 0.4499 microseconds
+Simple stat: 0.8617 microseconds
+Simple fstat: 0.5146 microseconds
+Simple open/close: 1.5047 microseconds
+Select on 10 fd's: 0.5884 microseconds
+Select on 100 fd's: 1.3399 microseconds
+Select on 250 fd's: 2.6161 microseconds
+Select on 500 fd's: 4.7309 microseconds
+Select on 10 tcp fd's: 0.6167 microseconds
+Select on 100 tcp fd's: 2.7777 microseconds
+Select on 250 tcp fd's: 6.3204 microseconds
+Select on 500 tcp fd's: 12.2957 microseconds
+Pipe latency: 85.9468 microseconds
+AF_UNIX sock stream latency: 47.6075 microseconds
+Process fork+exit: 188.8462 microseconds
+Process fork+execve: 904.5000 microseconds
+Process fork+/bin/sh -c: 1829.3333 microseconds
+x: No such file or directory
+Usage: lat_udp -s serverhost
+OR [-S] [-m <message size>] [-P <parallelism>] [-W <warmup>] [-N <repetitions>] server
+NOTE: message size must be >= 4
+Usage: lat_tcp -s serverhost [-b <backlog>]
+OR [-m <message size>] [-P <parallelism>] [-W <warmup>] [-N <repetitions>] server
+OR -S server
+Usage: lat_connect -s serverhost [-b <backlog>]
+OR [-S] [-N <repetitions>] server
+unable to register (XACT_PROG, XACT_VERS, udp).
+Usage: bw_tcp -s serverhost [-b <backlog>]
+OR [-m <message size>] [-M <bytes to move>] [-P <parallelism>] [-W <warmup>] [-N <repetitions>] server
+OR -S serverhost
+Segmentation fault (core dumped)
+AF_UNIX sock stream bandwidth: 4256.22 MB/sec
+Pipe bandwidth: 819.18 MB/sec
+
+
+"size=0k ovr=1.15
+2 23.77
+4 45.72
+8 48.79
+16 60.28
+24 63.65
+32 66.45
+64 66.97
+96 66.34
+
+"size=4k ovr=1.26
+2 53.81
+4 30.69
+8 56.30
+16 59.20
+24 64.54
+32 63.44
+64 66.40
+96 68.00
+
+"size=8k ovr=1.36
+2 29.04
+4 32.26
+8 52.14
+16 66.36
+24 69.00
+32 67.69
+64 65.82
+96 66.90
+
+"size=16k ovr=1.59
+2 33.25
+4 32.32
+8 60.69
+16 71.57
+24 67.80
+32 64.98
+64 69.16
+96 67.43
+
+"size=32k ovr=2.20
+2 53.39
+4 44.74
+8 54.44
+16 62.62
+24 66.90
+32 66.62
+64 69.46
+96 70.68
+
+"size=64k ovr=3.24
+2 48.45
+4 43.29
+8 59.40
+16 59.33
+24 70.40
+32 70.07
+64 74.22
+96 74.96
+
+
+[Tue May 13 14:05:35 UTC 2025]

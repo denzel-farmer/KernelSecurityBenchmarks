@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "SecurityBenchmark"
+version = "0.1.0"
+description = "Kernel security benchmarking tool"
+dependencies = [
+    "click",
+    "dataclasses",
+    "PyGithub",
+    "tqdm",
+    "Microwave",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "scipy"
+]
+authors = [{name = "Denzel Farmer", email = "denzel.farmer@columbia.edu"}]
+readme = "README.md"
+
+[tool.setuptools]
+packages = ["kernsecbench"]
+
+[project.scripts]
+kernsecbench = "kernsecbench:cli.cli"
